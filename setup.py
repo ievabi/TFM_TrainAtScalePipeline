@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if 'git+' not in x]
 
-setup(name='make_package',
+setup(name='TFM_TrainAtScalePipeline',
       version="1.0",
       description="Project Description",
       packages=find_packages(),
@@ -13,5 +13,5 @@ setup(name='make_package',
       test_suite='tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/make_package-run'],
+      scripts=['scripts/TFM_TrainAtScalePipeline-run'],
       zip_safe=False)
